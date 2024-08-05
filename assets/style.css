@@ -1,0 +1,140 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: url(background.gif) repeat  #181818;
+    font-family: courier;
+    font-size: 14px;
+    color: #c7c9cc; 
+  }
+  
+  .top-image-container {
+    display: flex;
+    margin-top: 5px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .top-image {
+    height: auto; /* Ensure the image maintains its aspect ratio */
+  }
+  
+  .flex-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center */
+    margin: 20px auto;
+    padding-top: 25px;
+    background: #010409;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    max-width: 800px; /* Set a maximum width for the container */
+    width: 100%; /* Ensure the container takes full width up to the max-width */
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 650px; /* Set a maximum width for the centered div */
+    min-width: 300px;
+    /* margin: 0 20px; Optional: Adjust margins if necessary */
+  }
+  
+  .header {
+    display: flex;
+    align-items: flex-start;  /* Align items to the top */
+    margin-bottom: 20px; /* Space between header and other content */
+  }
+  
+  .header h2 {
+    margin: 10px;
+    font-size: 15pt;
+  }
+  
+  .text-block {
+    display: flex;
+    flex-direction: column; /* Stack h2 and p vertically */
+  }
+  
+  .header p {
+    margin: 10px; /* Remove default margin from the paragraph */
+    margin-top: 15px; /* Optional: Add some space between h2 and text */
+  }
+  
+  a {
+    color: #7cc4f0;
+    transition: color 0.2s ease
+  }
+  
+  a:hover {
+    color: #fff; /* Change link color to white on hover */
+  }
+  
+  a:visited {
+    color: #5190c5
+  }
+  
+  .card h3 {
+    font-size: 13pt;
+  }
+  
+  .card h4 {
+    font-size: 12pt;
+  }
+  
+  .crop {
+    margin-right: 10px; /* Space between image and heading */
+  }
+  
+  .crop img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #333333;
+    margin-right: 10px; /* Space between image and heading */
+  }
+  
+  .cat-overlaps {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    z-index: 10;
+    width: 160px; /* Set width for the overlapping image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .mail-image {
+    width: 15px;
+  }
+  
+  .footer-image {
+    /* position: relative; */
+    position: absolute;
+    bottom: -110px; /* Adjust value to control vertical overlap */
+    right: -120px; /* Adjust value to control horizontal overlap */
+    z-index: 10;
+    width: 250px; /* Set width for the overlapping image */
+    height: auto; /* Maintain aspect ratio */
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  
+  .tab-container {
+    display: none;
+  }
+  
+  .tab-label {
+    cursor: pointer;
+  }
+  .tab-label:hover {
+    background-color: blue;
+  }
+  
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  input[type="radio"]:checked + .tab-label {
+    border-bottom: 1px solid #fff;
+  }
+  
